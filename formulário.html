@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulário</title>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+
+</head>
+<body>
+<!------------------------------ redes sociais --------------------------------->
+
+
+<div id="redesSociais">
+
+   <a href=""><img src="img/facebook.png" height="25px"></a> 
+      <a href=""><img src="img/instag.png" height="25px"></a>
+         <a href=""><img src="img/twitter.png" height="25px"></a>
+            <a href=""><img src="img/whatsapp.png" height="25px"></a>
+
+</div> 
+<!------------------------------ TRAÇO BRANCO --------------------------------->
+
+<div class="trancoCinza">
+    <div class="tranco"></div>
+</div>
+
+<!------------------------------ cabeçalho --------------------------------->
+<header> 
+
+<div id="logo">
+    <img src="img/logoBranco.png" height="150px">
+</div>
+
+<nav> <!--------------------------- MENU ---------------------------------->
+ <div class="box-menu">
+    <ul>
+       <li class=""><a href="missao.html">HOME</a></li>
+
+       <li><a href="SobreNós.html">SOBRE NÓS</a></li>
+
+           <li class="dropdown">
+            <a href="">MINISTÉRIOS</a>
+
+               <div class="dropdown-menu">
+                         <a href="">Jovens</a>
+                         <a href="">Casais</a>
+                         <a href="">Louvor</a>
+                         <a href="">Dança</a>
+                </div>
+            </li>
+
+              <li><a href="">CALENDÁRIO</a></li>
+                 <li><a href="">VÍDEOS</a></li>
+                     <li><a href="">CONTATO</a></li>
+                       <li><a href="">CONTRIBUA</a></li>
+
+    </ul>
+</div>
+</nav>
+</header>
+
+<nav> <!--------------------------- Título formulário ---------------------------------->
+
+
+  <div class="formularioBox">
+   
+    <div class="eMuitoBom">É muito bom tê-lo conosco!</div>
+
+
+       <div class="textoPreencha">Preecha os dados no formulário abaixo. Através dele poderemos colocar sua vida diante de Deus em oração, podemos também entrar em contato para se desejar, agendar uma visita a sua casa.</div>
+
+  </div>
+  <!------------------------------- FORMULÁRIO ---------------------------------->
+<div class="conteinerBox">
+    <div class="box">
+     
+     <form>
+         <fieldset>
+
+             <legend><b>Formulário para novos membros</b></legend>
+             <br>
+             <div class="inputBox">
+               <label for="nome">Nome completo</label>
+                <input type="text" name="nome" id="nome" class="inputUser" required>
+             </div>
+
+            <br>
+             <div class="inputBox">
+               <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="inputUser" required>
+             </div>
+
+             <br>
+             <div class="inputBox">
+               <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+             </div>
+             <br>
+<!------------ Formulário radio ----------------------------->
+             <p><b>Sexo:</b></p>
+             <input type="radio" id="feminino" name="genero" value="feminino" required>
+             <label for="feminino">Feminino</label>
+
+             <input type="radio" id="masculino" name="genero" value="masculino" required>
+             <label for="masculino">Masculino</label>
+
+<!------------ Input tipo data (dia/mês/ano)------------------>
+              <br><br>
+              <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+              <input type="date" name="data_nascimento" id="data_nascimento" class="inputUser" required>
+
+<!----------- últimos inputs (cidade/estado/endereço)--------->
+
+             <br><br>
+             <div class="inputBox">
+               <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" id="cidade" class="inputUser" required>
+            <br><br>
+               <label for="estado">Estado</label>
+                <input type="text" name="estado" id="estado" class="inputUser" required>
+            <br><br>
+               <label for="endereço">Endereço</label>
+                <input type="text" name="endereço" id="endereço" class="inputUser" required>
+            <br><br>
+             </div>
+             
+<!------------ botão para enviar formulário------------------>
+             
+             <input type="submit" name="submit" id="submit" style="width: 300px; height: 30px; font-size: 18px;">
+            <br><br>
+         </fieldset>        
+     </form>
+</div>
+</div>
+
+
+<div>
+   <div class="tracoCinza2">
+    <div class="traco"></div>
+</div>
+<!----------------------------------------- RODAPÉ ----------------------------------------->
+<div>
+    <div class="confira">Confira nossa programação de cultos</div>
+</div>
+
+   <div class="rodape">
+  
+  <div class="culto1">
+      Culto público <br>
+      Quinta 20 hs.<br>
+      Domingo 19:30 hs.
+  </div>
+
+  <div class="culto2">
+      Culto de jovens<br>
+      Sábado 20 hs.
+  </div> 
+
+  <div class="escola-dom">
+      Escola dominical<br>
+      Domingo 10 hs.
+  </div>
+  </div>
+<!----------------------------------------- RODAPÉ AZUL ----------------------------------------->
+
+<div class="rodape-azul">
+    <div id="logo2">
+        <img src="img/logoBranco.png" height="140px">
+    </div>
+    <div class="endereço">Endereço: Av. José Fonseca e Sílva, 737 - Jardim Patricia, Uberlândia</div>
+</div>
+
+
+</body>
+</html>
+</div>
+
+
+</body>

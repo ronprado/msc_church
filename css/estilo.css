@@ -1,0 +1,453 @@
+ 
+ /*--------------------------- KEYFRAMES --------------------------*/
+
+@keyframes fade-up{
+       0%{
+      opacity: 0;
+transform: translatey(30px) scale(0.9);
+       }
+100%{
+  opacity: 1;
+transform: translatey(0px) scale(1);
+  }
+}
+
+
+
+@keyframes bounce{
+    0%, 20%, 60, 100%{
+       -webkit-transform: translatey(0);
+               transform: translatey(0);
+ }
+   40%{
+       -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+   80%{
+       -webkit- transform: translatey(-10px);
+            transform: translatey(-10px);
+ }
+}
+*{
+	padding: 0;
+	margin: 0;	
+}
+body{
+	font-family: Didot, arial,helvetica;
+	font-size: 18px;
+}
+ /*--------------------------- REDES SOCIAIS --------------------------*/
+#redesSociais{
+	height: 15px;
+	padding: 25px;
+	background-color: #033954;
+	text-align: right;
+}
+#redesSociais a{
+	margin-right: 30px;
+	margin: 20px;
+	background-color: #033954;
+}
+#redesSociais a img{
+	position: relative;
+    transition: all 400ms ease;
+}
+#redesSociais a img:hover{
+	animation: bounce 1s;
+}
+ /*---------------------------- TRAÇO CINZA -----------------------------*/
+.trancoCinza{
+    height: 1px;
+    background-color: #033954;
+    display: flex;
+    justify-content: center;
+}
+.tranco{
+	  height: 1px;
+	background-color: #626666 ;
+	width: 1100px;
+ /*-------------------------------- LOGO -----------------------------*/
+}
+
+header{
+	display: flex;
+	background: #033954;
+	justify-content: space-between;
+}
+#logo{
+	margin-left: 70px;
+	width: 230px;
+}
+ /*-------------------------------- MENU -----------------------------*/
+
+nav ul{
+   padding-top: 50px;
+   margin-right: 50px;
+}
+nav li{
+	display: inline-block;
+}
+nav li a {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	padding: 15px;
+	list-style: none;
+}
+nav li a:hover{
+	background-color: #E74C3C;
+	text-decoration: underline;
+}
+.active{
+    background-color: #E74C3C;
+}
+.dropdown-menu{
+	position: absolute;
+	background: #033954;
+	display: none;
+}
+.dropdown-menu a{
+	display: block;
+}
+.dropdown:hover .dropdown-menu{
+	display: block;
+}
+ /*---------------------------- CULTO AO VIVO -------------------------*/
+
+ #cultoAoVivo{
+	background-image: url("../img/louvor.jpg");
+	height: 400px;
+}
+#cultoAoVivo img{
+	padding-top: 60px;
+	margin-left: 450px;
+}
+#cultoAoVivo img:hover{
+ animation: fade-up 0.5s;
+}
+ /*---------------------------- WELLCOME -------------------------*/
+
+.wellcome{
+	font-family: Didot, arial,helvetica;
+	height: 300px;
+	width: 640px;
+    margin-top: 80px;
+    margin-left: 150px;
+    position: absolute;
+
+}
+.bemVindo{
+	font-family: Eras ITC;
+	marging: 8px 0  10px 0;
+	padding: 2px 8px  2px  8px;
+	color: #008B8B;
+	font-size: 80px;
+}
+.bemVindo:hover{
+   animation: fade-up 0.5s;
+}
+.bemVindo-texto{
+	padding-top: 15px;
+	font-size: 20px;
+	text-align: justify;
+	color: black;
+}
+.box-wellcome{
+    height: 495px;
+    display: flex;
+}
+.wellcome-oracao{
+    width: 450px;
+    height: 300px;
+    margin-top: 150px;
+    margin-left: 700px;
+}
+.border{
+	width: 640px;
+    height: 30px;
+    border-bottom: 5px solid #DCDCDC;
+}
+ /*---------------------------- O QUE A IGREJA ESTÁ FAZENDO -------------------------*/
+.OqueAigreja{
+	height: 180px;
+}
+#OqueAigreja-texto{
+	  font-family: Eras ITC;
+     padding-top: 100px;
+     font-size: 60px;
+     color: #008B8B;
+     width: 800px;
+     margin-left: 28px;
+}
+#OqueAigreja-texto:hover{
+	animation: fade-up 0.5s;
+}
+.ministerios{
+	display: flex;
+	height: 600px;
+}
+.imagem-minist{
+	width: 280px;
+	margin: 20px 23px 23px 30px; 
+}
+.imagem-minist img{
+    border-radius: 15px;
+    position: relative; 
+	box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.3);
+    transition: all 0,10s cubic-bazier(0.165, 0.84, 0.44, 1);
+}
+.imagem-minist img:after{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  opacity: 1;
+
+  transition: all 1s cubic-bazier(0.165, 0.84, 0.44, 1);
+  z-index: -1;
+}
+.imagem-minist img:hover{
+  transform: scale(1.03, 1.03);
+  	box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.3);
+}
+.imagem-minist img:hover:after{
+	opacity: 1;
+}
+ /*-------------------------------- FAÇA PARTE ----------------------------*/
+.box-family{
+	height: 210px;
+	justify-items: center;
+}
+.familia{
+	margin-left: 340px;
+	color: #A0E7E7;
+    font-size: 180px;
+    width: 600px;
+    font-family: Eras ITC;
+    z-index: -1;
+    position: absolute;
+}
+.facaParte{
+	margin-top: 80px;
+	margin-left: 368px;
+    font-weight: bold;
+	width: 620px;
+	font-size: 38px;
+	font-family: Eras ITC;
+		position: absolute;
+}
+ /*---------------------------- FOTO E TEXTO FAMÍLIA ----------------------------*/
+.foto-texto{
+	height: 500px;
+	display: flex;
+	margin-left: 210px;
+}
+.foto-texto p{
+	width: 390px;
+	text-align: justify;
+	margin-left: 28px;
+}
+.foto-texto a{
+	margin-left: 28px;
+}
+
+ /*-------------------------------- MENSAGEM PASTORAL ----------------------------*/
+.mensagemPastor{
+	background-image: url("../img/fundoPreto.jpg");
+	background-position: 10% 1px;
+	height: 400px;
+}
+.mensagem-conteiner{
+   display: flex;
+   justify-content: space-around;
+}
+.mensagem{
+	margin-top: 95px;
+	font-size: 70px;
+	height: 200px;
+	width: 570px;
+	padding-left: 25px;
+	font-family: Optima;
+	color: white;
+}
+.video{
+	margin-top: 60px;
+	margin-right: 60px;
+}
+/*---------------------------- TRAÇO CINZA -----------------------------*/
+.tracoCinza2{
+    height: 160px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.traco{
+	margin-top: 150px;
+	height: 1px;
+	background-color: #D8DCDC;
+	width: 1150px;
+}
+ /*-------------------------------- RODAPÉ ----------------------------*/
+.confira{
+	height: 50px;
+	color: #033954;
+	font-size: 40px;
+	padding-left: 90px;
+    font-family: Eras ITC;	
+    text-shadow: 4px 5px 5px grey;;
+}
+.rodape{
+	 font-family: Eras ITC;	
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+}
+.culto1{
+	font-size: 35px;
+	color: #008B8B;
+	padding-left: 10px;
+	border-left: 2px solid red;
+	height: 115px;
+}
+.culto2{
+	font-size: 35px;
+	color: #008B8B;
+	padding-left: 10px;
+	border-left: 2px solid red;
+	height: 75px;
+
+}
+.escola-dom{
+	font-size: 35px;
+	color: #008B8B;
+	padding-left: 10px;
+	border-left: 2px solid red;
+	height: 75px;
+}
+ /*-------------------------------- RODAPÉ AZUL----------------------------*/
+.rodape-azul{
+	height: 180px;
+	background-color: #033954;
+	display: flex;
+}
+.rodape-azul img{
+	margin-left: 50px;
+	border-right: 1px solid white;
+	margin-top: 20px;
+	padding-left: 10px;
+}
+.endereço{
+    font-family: Eras ITC;	
+	color: white;
+	font-size: 20px;
+	margin-top: 90px;
+	margin-left: 150px;
+}
+/*--------------------------------------- QUEM SOMOS -----------------------------------*/
+.quemSomos{
+		height: 500px;
+		display: flex;
+		justify-content: center;
+}
+.quemSomosTitulo{
+    font-size: 90px;
+    position: relative;
+    margin-top: 120px;
+    color: white;
+    text-shadow: 4px 5px 5px black;
+}
+.quemSomos img{
+	    margin-top: 50px;
+        position: absolute;
+            z-index: -1;
+}
+/*--------------------------------------- MISSÃO BOXES -----------------------------------*/
+.conteiner_boxes{
+	height: 800px;
+}
+.missao_box{
+	height: 220px;
+	width: 1050px;
+	background-color: #033954;
+    font-family: Eras ITC;
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-left: 150px;
+}
+.missao{
+	padding: 20px 20px 20px 45px;
+	font-size: 30px;
+	color: yellow;
+}
+.missao_box p{
+	text-align: justify;
+	width: 950px;
+	padding-left: 45px;
+}
+/*--------------------------------------- NOSSA HISTÓRIA -----------------------------------*/
+.conteiner_nossaHistória{
+     height: 750PX;
+     display: flex;
+     justify-content: center;
+}
+.nossaHistóriaTitulo{
+	font-size: 60px;
+	font-family: Gill Sans Extrabold;
+	color: #E74C3C;
+	padding-left: 10px;
+}
+.conteiner_nossaHistória P{
+     width: 1000px;
+	font-family: Helvetica;
+     text-align: justify;
+     padding: 10px;
+     color: #2C3E50;
+     background-color: #F5B041;
+     padding: 30px;
+     border-radius: 20px;
+}
+/*----------------------------APRESENTAÇÃO DO FORMULÁRIO -----------------------------------*/
+
+.formularioBox{
+    height: 160px;
+    background-image: linear-gradient(to right, #0FC1F1, #2C5E6C, #0FC1F1);
+    font-family: Eras ITC;
+    text-align: center;
+}
+.eMuitoBom{
+   padding-top: 20px;
+   text-shadow: 1px 2px black;
+  color: #FA5A33;
+  font-size: 40px;
+}
+.textoPreencha{
+  color: white;
+  font-size: 20px;
+  width: 740px;
+  margin-left: 295px;
+}
+/*------------------------------------ FORMULÁRIO ----------------------------------------*/
+.box{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 40px;
+    color: #295D6C;
+
+}
+fieldset{
+	border: 3px solid #295D6C;
+	border-radius: 10px;
+	padding: 25px;
+}
+legend{
+	border: 2px solid #295D6C;
+	padding: 5px;
+    border-radius: 5px;
+}
+/*------------------------------------ FORMULÁRIO RODAPÉ----------------------------------------*/
+.positionForm{
+	
+}
